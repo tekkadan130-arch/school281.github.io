@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цифровой музей школы №281</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        .section {
+            position: relative;
+            overflow: hidden;
+            padding: 25px;
+            border-radius: 12px;
+            transition: all 0.4s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 102, 204, 0.15);
+        }
+
+        .section-photo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: center/cover no-repeat;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            z-index: 1;
+        }
+
+        .section:hover .section-photo {
+            opacity: 0.25;
+        }
+
+        .section-content {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+
+<header class="main-header">
+    <div class="header-container">
+        <div class="logo">Школа №281 | Музей</div>
+        <nav class="nav-menu">
+            <a href="index.html" class="active">Главная</a>
+            <a href="history-building.html">История здания</a>
+            <a href="building-description.html">Здание школы</a>
+            <a href="graduates.html">Выпускники</a>
+            <a href="events-achievements.html">События</a>
+            <a href="gallery.html">Галерея</a>
+            <a href="news.html">Новости</a>
+        </nav>
+    </div>
+</header>
+<section class="hero">
+    <h1>Цифровой музей<br>ГБОУ Школа №281</h1>
+    <p>ул. Коминтерна, д. 4, корп. 1 • Москва</p>
+    <a href="#sections" class="btn">Начать экскурсию</a>
+</section>
+<main class="content-wrapper" id="sections">
+
+    <!-- История создания музея -->
+    <section class="section">
+        <div class="section-content">
+            <h2>История создания музея</h2>
+            <p class="museum-quote">«Сохраняя прошлое, мы строим будущее»</p>
+            <p>Цифровой музей школы создан для сохранения и представления информации о прошлом и настоящем учебного заведения. Цель музея — популяризация истории школы, сохранение памяти о значимых событиях и личностях, а также предоставление возможности посетителям ознакомиться с материалами.</p>
+        </div>
+    </section>
+
+    <!-- Остальные разделы -->
+    <section class="section">
+        <div class="section-photo" style="background-image: url('images/history-building.jpg');"></div>
+        <div class="section-content">
+            <h2>История здания</h2>
+            <p>Корпус на ул. Коминтерна, 4, корп. 1 (бывшая школа №1139) построен в 1965–1966 годах.</p>
+            <a href="history-building.html" class="btn">Узнать подробнее →</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-photo" style="background-image: url('images/school-building.jpg');"></div>
+        <div class="section-content">
+            <h2>Описание здания и архитектурные особенности</h2>
+            <p>Пятиэтажное здание советского периода после капитальной реконструкции 2024 года.</p>
+            <a href="building-description.html" class="btn">Узнать подробнее →</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-photo" style="background-image: url('images/graduates.jpg');"></div>
+        <div class="section-content">
+            <h2>Знаменитые выпускники</h2>
+            <p>Люди, которыми гордится школа — учёные, военные, спортсмены и педагоги.</p>
+            <a href="graduates.html" class="btn">Узнать подробнее →</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-photo" style="background-image: url('images/events.jpg');"></div>
+        <div class="section-content">
+            <h2>События и достижения</h2>
+            <p>Кадетские классы, олимпиады, спортивные победы и культурные мероприятия.</p>
+            <a href="events-achievements.html" class="btn">Узнать подробнее →</a>
+        </div>
+    </section>
+
+</main>
+
+<footer class="main-footer">
+    <p>© 2026 Цифровой музей ГБОУ Школа №281 • ул. Коминтерна, 4 к1, Москва</p>
+</footer>
+
+</body>
+</html>
