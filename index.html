@@ -119,3 +119,22 @@
 
 </body>
 </html>
+<script>
+// Скрытие шапки при скролле
+let lastScrollTop = 0;
+const header = document.querySelector('.main-header');
+
+window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop && scrollTop > 100) {
+        // Скроллим вниз — прячем шапку
+        header.style.transform = 'translateY(-100%)';
+    } else {
+        // Скроллим вверх — показываем шапку
+        header.style.transform = 'translateY(0)';
+    }
+
+    lastScrollTop = scrollTop;
+});
+</script>
